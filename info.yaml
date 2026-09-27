@@ -1,10 +1,10 @@
 
 # Tiny Tapeout project information
 project:
-  title:        ""      # My digital VGA
-  author:       ""      # Denis Rubin
-  discord:      ""      # Your discord drubine101, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # array of vga colors
+  title:        "My digital VGA"   # My digital VGA
+  author:       "Denis Rubin"      # Denis Rubin
+  discord:      "drubine101"       # Your discord drubine101, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "array of vga colors"      # array of vga colors
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     25175000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -12,18 +12,20 @@ project:
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_vga_example"
+  top_module:  "tt_um_drubine101_digitaVGA"
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
-    - "project.v"
+    - "digitalVGA.v"
     - "hvsync_generator.v"
+    - "cells.v"
+    - "config.json"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "ui_in"
+  ui[1]: "uio_in"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
