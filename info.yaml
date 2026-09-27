@@ -1,6 +1,6 @@
 
 # Tiny Tapeout project information
-project:
+  project:       "vga colorsito"
   title:        "My digital VGA"   # My digital VGA
   author:       "Denis Rubin"      # Denis Rubin
   discord:      "drubine101"       # Your discord drubine101, for communication and automatically assigning you a Tapeout role (optional)
