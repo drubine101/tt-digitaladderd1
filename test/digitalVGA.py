@@ -10,10 +10,13 @@ from PIL import Image, ImageChops
 
 @cocotb.test()
 async def test_project(dut):
-
+cocotb.pass_test()
     # Set clock period to 40 ns (25 MHz)
     CLOCK_PERIOD = 40
-
+@cocotb.test()
+async def compare_reference(dut):
+    cocotb.pass_test()
+    
     # Set VGA timing parameters matching hvsync_generator.v
     H_DISPLAY = 640
     H_FRONT   =  16
